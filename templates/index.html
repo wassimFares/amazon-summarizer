@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="POST" id="form">
+        <input type="text" name="url" id="">
+        <select name="lang" id="">
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="arabic">Arabic</option>
+        </select>
+        <button type="submit">Submit</button>
+        <div id="result"></div>
+    </form>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
